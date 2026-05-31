@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Huber Bermeo Rodas — Científico de Datos con experiencia en Python, R, SQL, Machine Learning, Business Intelligence y desarrollo Full Stack.">
+  <meta name="keywords" content="científico de datos, data scientist, python, machine learning, sql, business intelligence, Colombia, portafolio">
+  <meta name="author" content="Huber Bermeo Rodas">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Huber Bermeo Rodas | Científico de Datos">
+  <meta property="og:description" content="Portafolio profesional — Data Science · ML · BI · Full Stack">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://huber1979.github.io/portfolio-huber/">
+
+  <title>Huber Bermeo Rodas | Científico de Datos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>HBR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://github.com/huber1979" target="_blank" rel="noopener" class="nav-cta">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="avatar-wrapper">
+        <div class="avatar">HBR</div>
+        <div class="avatar-ring"></div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero-name">Huber Bermeo Rodas</h1>
+      <h2 class="hero-title">Científico de Datos</h2>
+      <p class="hero-subtitle">
+        <span class="tag">Python</span><span class="sep">·</span>
+        <span class="tag">R</span><span class="sep">·</span>
+        <span class="tag">SQL</span><span class="sep">·</span>
+        <span class="tag">Machine Learning</span><span class="sep">·</span>
+        <span class="tag">BI</span><span class="sep">·</span>
+        <span class="tag">Full Stack</span>
+      </p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM8 12h8M12 8l4 4-4 4"/></svg>
+          Ver Proyectos
+        </a>
+        <a href="https://www.linkedin.com/in/huberbermeorodas/" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="scroll-indicator" aria-label="Ir a Sobre mí">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section id="sobre-mi">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-label">// quien soy</p>
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>Transformando datos en decisiones</h3>
+          <p>
+            Soy <strong>Científico de Datos</strong> con sede en Colombia, con un perfil multidisciplinar que abarca
+            todo el ciclo de vida del dato: desde la integración y transformación de fuentes heterogéneas,
+            hasta la entrega de insights accionables mediante dashboards interactivos, modelos predictivos
+            y aplicaciones web.
+          </p>
+          <p>
+            Mi experiencia incluye <strong>análisis de lenguaje natural (NLP)</strong> aplicado al sector energético,
+            <strong>modelado econométrico</strong> de activos agrícolas con Machine Learning, <strong>inteligencia de negocios</strong>
+            con tableros ejecutivos, y <strong>desarrollo full stack</strong> de sistemas empresariales completos
+            con Vue.js, Next.js y Supabase.
+          </p>
+          <p>
+            Combino herramientas analíticas clásicas (Python, R, SQL) con tecnologías modernas de nube
+            y desarrollo (Google BigQuery, Databricks, Vercel) para construir soluciones de datos <strong>end-to-end</strong>.
+          </p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/huberbermeorodas/" target="_blank" rel="noopener" class="btn btn-primary">Ver LinkedIn</a>
+            <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-number" data-target="13" data-suffix="+">0+</div>
+            <div class="stat-label">Proyectos en portafolio</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="10" data-suffix="+">0+</div>
+            <div class="stat-label">Tecnologías dominadas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="5" data-suffix="">0</div>
+            <div class="stat-label">Áreas de especialización</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">Orientado a resultados</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section id="habilidades">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-label">// stack tecnológico</p>
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(99,102,241,0.15);">🐍</div>
+            <span class="skill-cat-title">Lenguajes de Programación</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PL/SQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(167,139,250,0.15);">🤖</div>
+            <span class="skill-cat-title">Machine Learning & IA</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">NLP / LDA</span>
+            <span class="skill-tag">Series de Tiempo</span>
+            <span class="skill-tag">Econometría</span>
+            <span class="skill-tag">pandas</span>
+            <span class="skill-tag">numpy</span>
+            <span class="skill-tag">statsmodels</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(34,211,238,0.15);">☁️</div>
+            <span class="skill-cat-title">Big Data & Cloud</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Google BigQuery</span>
+            <span class="skill-tag">Databricks</span>
+            <span class="skill-tag">Apache Spark</span>
+            <span class="skill-tag">Google Cloud</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Supabase</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(251,146,60,0.15);">🗄️</div>
+            <span class="skill-cat-title">Bases de Datos</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Oracle</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(244,114,182,0.15);">📊</div>
+            <span class="skill-cat-title">BI & Visualización</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Chart.js</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Plotly</span>
+            <span class="skill-tag">Looker</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(52,211,153,0.15);">🌐</div>
+            <span class="skill-cat-title">Desarrollo Web</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Vue 3</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Deno</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: rgba(99,102,241,0.15);">🛠️</div>
+            <span class="skill-cat-title">Herramientas & Otros</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">ArcGIS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">jsPDF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section id="proyectos">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-label">// trabajo real</p>
+        <h2 class="section-title">Proyectos</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="todos">Todos</button>
+        <button class="filter-tab" data-filter="data-science">Data Science</button>
+        <button class="filter-tab" data-filter="bi-analytics">BI & Analytics</button>
+        <button class="filter-tab" data-filter="fullstack">Full Stack</button>
+        <button class="filter-tab" data-filter="data-engineering">Ing. de Datos</button>
+        <button class="filter-tab" data-filter="gis">GIS</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- P1: Análisis de Sentimiento LDA -->
+        <article class="project-card reveal" data-categories="data-science">
+          <div class="card-image">
+            <div class="card-placeholder" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);">
+              <div class="placeholder-icon">🧠</div>
+              <div class="placeholder-text">NLP · Topic Modeling</div>
+            </div>
+            <div class="card-overlay">
+              <span class="badge-category">Data Science</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Análisis de Sentimiento LDA</h3>
+            <p class="card-description">
+              Modelado de tópicos y análisis de sentimientos en quejas de clientes (PQRS) del sector
+              energético colombiano 2024–2025 usando Latent Dirichlet Allocation. Identificación de
+              patrones temáticos en miles de registros de texto no estructurado.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">NLP</span>
+              <span class="card-tag">LDA</span>
+              <span class="card-tag">Topic Modeling</span>
+              <span class="card-tag">NLTK</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P2: Seguimiento a Metas Presupuestales -->
+        <article class="project-card reveal" data-categories="bi-analytics">
+          <div class="card-image">
+            <img src="assets/images/presupuestal.jpeg" alt="Dashboard de seguimiento a metas presupuestales" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">BI & Analytics</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Seguimiento a Metas Presupuestales</h3>
+            <p class="card-description">
+              Dashboard ejecutivo para monitoreo en tiempo real del cumplimiento de metas presupuestales.
+              Visualización de indicadores de gestión financiera con alertas automáticas, comparativas
+              históricas y métricas de desempeño organizacional.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Power BI</span>
+              <span class="card-tag">DAX</span>
+              <span class="card-tag">Dashboard</span>
+              <span class="card-tag">Finanzas</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P3: Tableros BI -->
+        <article class="project-card reveal" data-categories="bi-analytics">
+          <div class="card-image">
+            <img src="assets/images/tableros-bi.jpeg" alt="Tableros de Business Intelligence" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">BI & Analytics</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Tableros de Business Intelligence</h3>
+            <p class="card-description">
+              Suite de tableros de inteligencia de negocios para visualización integral de KPIs organizacionales.
+              Incluye análisis de tendencias, benchmarking y reportería ejecutiva para soporte en la
+              toma de decisiones estratégicas.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Power BI</span>
+              <span class="card-tag">KPIs</span>
+              <span class="card-tag">Analytics</span>
+              <span class="card-tag">Reportería</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P4: Econometría en Activos Agrícolas -->
+        <article class="project-card reveal" data-categories="data-science">
+          <div class="card-image">
+            <img src="assets/images/econometria.png" alt="Frontera eficiente media-varianza - Econometría de activos agrícolas" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">Data Science</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Econometría en Activos Agrícolas</h3>
+            <p class="card-description">
+              Modelado econométrico avanzado de precios de activos agrícolas con Arbitrage Pricing Theory (APT),
+              análisis factorial exploratorio (AFE), optimización de portafolios con frontera eficiente
+              media-varianza, backtesting de señales y validación out-of-sample con Machine Learning.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">R</span>
+              <span class="card-tag">Econometría</span>
+              <span class="card-tag">ML</span>
+              <span class="card-tag">Series de Tiempo</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P5: ETL Databricks -->
+        <article class="project-card reveal" data-categories="data-engineering">
+          <div class="card-image">
+            <div class="card-placeholder" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);">
+              <div class="placeholder-icon">⚡</div>
+              <div class="placeholder-text">ETL · Big Data</div>
+            </div>
+            <div class="card-overlay">
+              <span class="badge-category">Ing. de Datos</span>
+              <span class="badge-status in-progress">En desarrollo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Pipeline ETL con Databricks</h3>
+            <p class="card-description">
+              Pipeline de datos con Databricks y Apache Spark para integración y transformación de datos
+              a gran escala. Arquitectura Delta Lake para gestión eficiente con versionamiento y
+              cumplimiento ACID en entornos de producción.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Databricks</span>
+              <span class="card-tag">PySpark</span>
+              <span class="card-tag">Delta Lake</span>
+              <span class="card-tag">ETL</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P6: Análisis Datos Oracle -->
+        <article class="project-card reveal" data-categories="bi-analytics data-engineering">
+          <div class="card-image">
+            <div class="card-placeholder" style="background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #1c1917 100%);">
+              <div class="placeholder-icon">🔴</div>
+              <div class="placeholder-text">Oracle · PL/SQL</div>
+            </div>
+            <div class="card-overlay">
+              <span class="badge-category">Base de Datos</span>
+              <span class="badge-status in-progress">En desarrollo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Análisis de Datos Oracle</h3>
+            <p class="card-description">
+              Análisis de datos y consultas avanzadas sobre bases de datos Oracle empresariales.
+              Optimización de queries, stored procedures y PL/SQL para extracción de reportes
+              y análisis desde fuentes de datos relacionales a gran escala.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Oracle</span>
+              <span class="card-tag">SQL</span>
+              <span class="card-tag">PL/SQL</span>
+              <span class="card-tag">Analytics</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P7: Google BigQuery -->
+        <article class="project-card reveal" data-categories="data-engineering bi-analytics">
+          <div class="card-image">
+            <img src="assets/images/bigquery.jpeg" alt="Análisis de datos con Google BigQuery" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">Ing. de Datos</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Análisis de Datos en Google BigQuery</h3>
+            <p class="card-description">
+              Procesamiento y análisis de datos a escala en Google Cloud mediante BigQuery.
+              Consultas SQL optimizadas para datasets de gran volumen, con integración a
+              herramientas de BI y visualización en la nube de Google.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">BigQuery</span>
+              <span class="card-tag">SQL</span>
+              <span class="card-tag">Google Cloud</span>
+              <span class="card-tag">Analytics</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P8: Análisis SQL -->
+        <article class="project-card reveal" data-categories="bi-analytics">
+          <div class="card-image">
+            <div class="card-placeholder" style="background: linear-gradient(135deg, #0c1a2e 0%, #162032 50%, #0c1a2e 100%);">
+              <div class="placeholder-icon">🗃️</div>
+              <div class="placeholder-text">SQL · Queries</div>
+            </div>
+            <div class="card-overlay">
+              <span class="badge-category">BI & Analytics</span>
+              <span class="badge-status in-progress">En desarrollo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Análisis de Datos SQL</h3>
+            <p class="card-description">
+              Análisis exploratorio y transformación de datos mediante SQL avanzado. Consultas complejas,
+              agregaciones, window functions, CTEs y modelado relacional para extracción de insights
+              desde bases de datos relacionales.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">SQL</span>
+              <span class="card-tag">Window Functions</span>
+              <span class="card-tag">CTEs</span>
+              <span class="card-tag">Análisis</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P9: SEO Social Media -->
+        <article class="project-card reveal" data-categories="bi-analytics">
+          <div class="card-image">
+            <img src="assets/images/seo.jpeg" alt="Análisis de SEO y Social Media" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">BI & Analytics</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Análisis SEO y Social Media</h3>
+            <p class="card-description">
+              Análisis de métricas de posicionamiento SEO y rendimiento en redes sociales para
+              optimización de presencia digital. Identificación de oportunidades, análisis de
+              tráfico orgánico, engagement y estrategias de conversión.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">SEO</span>
+              <span class="card-tag">Social Media</span>
+              <span class="card-tag">Google Analytics</span>
+              <span class="card-tag">Marketing</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P10: Cotizador Chat -->
+        <article class="project-card reveal" data-categories="fullstack">
+          <div class="card-image">
+            <img src="assets/images/cotizador.png" alt="Cotizador interactivo con chatbot - SAAVE" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">Full Stack</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Cotizador Interactivo con Chatbot</h3>
+            <p class="card-description">
+              Aplicación web conversacional para generación automatizada de cotizaciones comerciales.
+              Chatbot con cálculo dinámico de áreas, tablas de precios configurables y exportación
+              a PDF. Backend serverless con Supabase y despliegue en Vercel.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Next.js</span>
+              <span class="card-tag">React</span>
+              <span class="card-tag">TypeScript</span>
+              <span class="card-tag">Supabase</span>
+              <span class="card-tag">Tailwind</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P11: Sitio Web Piscícola -->
+        <article class="project-card reveal" data-categories="fullstack">
+          <div class="card-image">
+            <div class="card-placeholder" style="background: linear-gradient(135deg, #052e16 0%, #064e3b 50%, #052e16 100%);">
+              <div class="placeholder-icon">🐟</div>
+              <div class="placeholder-text">Web · Sector Piscícola</div>
+            </div>
+            <div class="card-overlay">
+              <span class="badge-category">Full Stack</span>
+              <span class="badge-status in-progress">En desarrollo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sitio Web Piscícola</h3>
+            <p class="card-description">
+              Sitio web corporativo para empresa del sector piscícola colombiano. Diseño responsivo
+              moderno con presentación de productos y servicios, catálogo de especies,
+              información de contacto y formulario de consultas.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">HTML</span>
+              <span class="card-tag">CSS</span>
+              <span class="card-tag">JavaScript</span>
+              <span class="card-tag">Responsive</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- P12: SENActivos -->
+        <article class="project-card reveal" data-categories="fullstack">
+          <div class="card-image">
+            <img src="assets/images/senactivos.png" alt="SENActivos - Sistema de gestión de inventarios" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">Full Stack · Enterprise</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">SENActivos — Gestión de Inventarios</h3>
+            <p class="card-description">
+              Sistema empresarial de gestión de activos e inventarios. Plataforma full-stack con
+              autenticación por roles, CRUD de activos, datos geográficos de Colombia,
+              gestión de rutas de mantenimiento y 15+ funciones serverless en Deno.
+              Desplegado en Vercel + Supabase Edge Functions.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Vue 3</span>
+              <span class="card-tag">Supabase</span>
+              <span class="card-tag">TypeScript</span>
+              <span class="card-tag">Deno</span>
+              <span class="card-tag">Bootstrap</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PQ0: ArcGIS -->
+        <article class="project-card reveal" data-categories="gis data-science">
+          <div class="card-image">
+            <img src="assets/images/arcgis.jpeg" alt="Análisis geoespacial con ArcGIS y Python" loading="lazy">
+            <div class="card-overlay">
+              <span class="badge-category">GIS</span>
+              <span class="badge-status completed">Completado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Análisis Geoespacial con ArcGIS y Python</h3>
+            <p class="card-description">
+              Análisis geoespacial combinando ArcGIS con Python para procesamiento de datos geográficos
+              y generación de mapas temáticos interactivos. Análisis de distribución espacial,
+              interpolación y visualización web de datos georreferenciados.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">ArcGIS</span>
+              <span class="card-tag">Python</span>
+              <span class="card-tag">GIS</span>
+              <span class="card-tag">Web Mapping</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="card-link">
+                Ver en GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-label">// hablemos</p>
+        <h2 class="section-title">Contacto</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="contact-intro reveal">
+        ¿Tienes un proyecto de datos en mente, buscas colaboración o quieres conectar?
+        Estoy disponible para proyectos freelance, posiciones full-time y consultoría.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:huber1979@gmail.com" class="contact-card reveal">
+          <div class="contact-icon" style="background: rgba(99,102,241,0.15);">✉️</div>
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">huber1979@gmail.com</span>
+        </a>
+        <a href="https://github.com/huber1979" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon" style="background: rgba(255,255,255,0.06);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#94a3b8"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <span class="contact-card-label">GitHub</span>
+          <span class="contact-card-value">github.com/huber1979</span>
+        </a>
+        <a href="https://www.linkedin.com/in/huberbermeorodas/" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon" style="background: rgba(10,102,194,0.15);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <span class="contact-card-label">LinkedIn</span>
+          <span class="contact-card-value">in/huberbermeorodas</span>
+        </a>
+        <a href="https://www.linkedin.com/in/huberbermeorodas/" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon" style="background: rgba(52,211,153,0.12);">🇨🇴</div>
+          <span class="contact-card-label">Ubicación</span>
+          <span class="contact-card-value">Colombia</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <span>
+        <a href="#hero" class="nav-logo" style="font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:600;">
+          <span style="color:var(--accent)">&lt;</span>HBR<span style="color:var(--accent)">/&gt;</span>
+        </a>
+      </span>
+      <span>Diseñado y construido por <a href="https://www.linkedin.com/in/huberbermeorodas/" target="_blank" rel="noopener">Huber Bermeo Rodas</a> · 2025</span>
+      <span>
+        <a href="https://github.com/huber1979" target="_blank" rel="noopener">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/huberbermeorodas/" target="_blank" rel="noopener">LinkedIn</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:huber1979@gmail.com">Email</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
